@@ -66,17 +66,17 @@ if (isset($_POST['register'])) {
                 try {
 
                     $mail->isSMTP();
-                    $mail->Host = 'smtp.gmail.com';
+                    $mail->Host = 'smtp.example.com';
                     $mail->SMTPAuth = true;
 
-                    $mail->Username = 'hey.trisha.dev@gmail.com';
-                    $mail->Password = 'qvcg hpve rlay tmjf';
+                    $mail->Username = 'demo@example.com';
+                    $mail->Password = 'YOUR_PASSWORD';
 
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
 
                     $mail->setFrom(
-                        'hey.trisha.dev@gmail.com',
+                        'demo@example.com',
                         'CineBook'
                     );
 
